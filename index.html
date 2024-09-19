@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Evento Clique</title>
+</head>
+<body>
+    <main>
+            <button id="retirar" onclick="subtrair()">-</button>
+            <input type="number" name="numero" id="numero" value="0">
+            <button id="adicionar" onclick="somar()">+</button>
+    </main>
+    <script>
+        function somar(){
+            var input = document.getElementById("numero");
+            input.value = parseInt(input.value) +1;
+        }
+        function subtrair(){
+            var input = document.getElementById("numero");
+            input.value = parseInt(input.value) -1;
+        }
+    </script>
+</body>
+</html>
